@@ -1,0 +1,13 @@
+{
+  "name": "pos_pipeline",
+  "version": "1.0.0",
+  "description": "Projeto exemplo com pipeline no GitHub Actions",
+  "scripts": {
+    "e2e": "npx playwright test",
+    "start": "npx lite-server"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "lite-server": "^2.6.1"
+  }
+}
