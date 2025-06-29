@@ -10,22 +10,28 @@ jobs:
   e2e-test:
     runs-on: ubuntu-latest
 
+    # passos do script de build
     steps:
+      # clone do projeto
       - uses: actions/checkout@v4
 
-      - name: Instalando Node
+      # instalacao do node  
         uses: actions/setup-node@v4
         with:
           node-version: "22.x"
 
+      # instalacao do yarn
       - name: Instalando Yarn
         run: npm install -g yarn
 
+      # instalacao das dependencias
       - name: Instalando dependências
-        run: yarn install
-
+        run: yarn 
+      
+      # instalacao do playwright
       - name: Instalando Playwright
-        run: npx playwright install
+        run: yarn playwright install
 
+      # executar os testes e2e
       - name: Executando Testes E2E
         run: yarn run e2e
