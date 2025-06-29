@@ -1,6 +1,33 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="31.602421000000003">
-<testsuite name="example.spec.js" timestamp="2025-06-29T13:36:06.176Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.845" errors="0">
-<testcase name="Página inicial › Deve carregar a página com sucesso" classname="example.spec.js" time="10.845">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="6.536677">
+<testsuite name="example.spec.js" timestamp="2025-06-29T14:25:46.302Z" hostname="chromium" tests="1" failures="1" skipped="0" time="3.339" errors="0">
+<testcase name="Página inicial › Deve carregar a página com sucesso" classname="example.spec.js" time="3.339">
+<failure message="example.spec.js:5:3 Deve carregar a página com sucesso" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.js:5:3 › Página inicial › Deve carregar a página com sucesso ───────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/
+    Call log:
+      - navigating to "http://localhost:3002/", waiting until "load"
+
+
+      4 | test.describe('Página inicial', () => {
+      5 |   test('Deve carregar a página com sucesso', async ({ page }) => {
+    > 6 |     await page.goto('http://localhost:3002');
+        |                ^
+      7 |     await expect(page.locator('h1')).toHaveText('Hello, Pipeline!');
+      8 |   });
+      9 | });
+        at C:\POS_PIPELINE\e2e\example.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\example-Página-inicial-Deve-carregar-a-página-com-sucesso-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-Página-inicial-Deve-carregar-a-página-com-sucesso-chromium\test-failed-1.png]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
