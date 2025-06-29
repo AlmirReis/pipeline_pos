@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="31.602421000000003">
+<testsuite name="example.spec.js" timestamp="2025-06-29T13:36:06.176Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.845" errors="0">
+<testcase name="Página inicial › Deve carregar a página com sucesso" classname="example.spec.js" time="10.845">
+</testcase>
+</testsuite>
+</testsuites>
